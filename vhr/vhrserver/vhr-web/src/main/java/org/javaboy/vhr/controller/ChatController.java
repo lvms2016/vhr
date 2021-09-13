@@ -16,6 +16,7 @@ public class ChatController {
     HrService hrService;
     @GetMapping("/hrs")
     public List<Hr> getAllHrs() {
+        System.Out.println("这是一次神之更新");
         return hrService.getAllHrsExceptCurrentHr();
     }
 }
